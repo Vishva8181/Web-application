@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id = "vishva">
+<label >name:</label>
+
+        <input type="text" id="name"><br><br>
+        <label>password:</label>
+        <input type="password" id="password"><br><br>
+        <button onclick="submit" id="submit">Submit</button>
+
+    </form>
+</body>
+<script>
+    let summa = document.getElementById("vishva");
+    submit.onclick = function(){
+        let name = document.getElementById("name").value;
+        let password = document.getElementById("password").value;
+
+
+        if (name == "vishva" && password == "123"){
+            alert("login successful");
+        }
+        else{
+            alert("login failed");
+        }
+
+
+    //   if (name == "vishva" || password == "123"){
+    //         Entervalue.innerText = "login successful";
+    //         Entervalue.style.color = "green";
+    //     }
+    //     else{
+    //         Entervalue.innerText = "login failed";
+    //         Entervalue.style.color = "red";
+    //     }   
+
+    }
+    
+</script>
+</html>

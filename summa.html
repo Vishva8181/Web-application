@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<label >Name:
+    <input type="text" id="fn">
+</label><br><br>
+<label >password
+    <input type="password" id="p">
+</label>
+<button onclick="alert()">alert</button>
+
+<script>
+function alert() {
+    let name = document.getElementById("fn").value;
+    let password = document.getElementById("p").value;
+    if(name == "vishva" && password == "123"){
+        alert("welcome vishva");
+
+    }
+    else{
+        alert("You are not vishva")
+    }
+}
+</script>
+
+</body>
+</html>
